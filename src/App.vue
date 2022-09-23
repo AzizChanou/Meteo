@@ -98,7 +98,7 @@
 export default {
   data() {
     return {
-      key: "0be9f7ea34a151b04c340e2114da5c26",
+      key: "{{key}}",
       weatherData: {},
       city: "Cotonou",
       error: {},
@@ -106,7 +106,7 @@ export default {
   },
   created() {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=Cotonou&appid=0be9f7ea34a151b04c340e2114da5c26&units=metric&lang=fr"
+      "https://api.openweathermap.org/data/2.5/weather?q=Cotonou&appid={{key}}&units=metric&lang=fr"
     )
       .then((res) => res.json())
       .then((data) => (this.weatherData = data))
