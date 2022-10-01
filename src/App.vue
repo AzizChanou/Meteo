@@ -11,7 +11,7 @@
       </div>
       <div
         class="w-full flex flex-row justify-between shadow-inner shadow-black overflow-x-scroll space-x-4 md:space-x-0">
-        <div class="bg-secondary p-3 font-bold rounded min-w-[80%] flex flex-col items-center">
+        <div class="bg-secondary p-3 font-bold rounded flex flex-col items-center">
           <span class="uppercase text-xl">Vent</span>
           <div class="text-xl lg:text-3xl my-6">
             <span class="text-3xl lg:text-5xl">{{
@@ -19,7 +19,7 @@
             }}</span>mph
           </div>
         </div>
-        <div class="bg-secondary p-3 font-bold rounded flex flex-col min-w-[80%] items-center">
+        <div class="bg-secondary p-3 font-bold rounded flex flex-col items-center">
           <span class="uppercase text-xl">Humidité</span>
           <div class="text-xl lg:text-3xl my-6">
             <span class="text-3xl lg:text-5xl">{{
@@ -27,7 +27,7 @@
             }}</span>%
           </div>
         </div>
-        <div class="bg-secondary p-3 font-bold rounded flex flex-col min-w-[80%] items-center">
+        <div class="bg-secondary p-3 font-bold rounded flex flex-col items-center">
           <span class="uppercase text-xl">Pression</span>
           <div class="text-xl lg:text-3xl my-6">
             <span class="text-3xl lg:text-5xl">{{
@@ -35,7 +35,7 @@
             }}</span>hPa
           </div>
         </div>
-        <div class="bg-secondary p-3 font-bold rounded flex flex-col min-w-[80%] items-center">
+        <div class="bg-secondary p-3 font-bold rounded flex flex-col items-center">
           <span class="uppercase text-xl">Visibilité</span>
           <div class="text-xl lg:text-3xl my-6">
             <span class="text-3xl lg:text-5xl">{{
@@ -43,7 +43,7 @@
             }}</span>m
           </div>
         </div>
-        <div class="bg-secondary p-3 font-bold rounded flex flex-col min-w-[80%] items-center">
+        <div class="bg-secondary p-3 font-bold rounded flex flex-col items-center">
           <span class="uppercase text-xl">Code pays</span>
           <div class="text-xl lg:text-3xl my-6">
             <span class="text-3xl lg:text-5xl">{{
@@ -98,7 +98,7 @@
 export default {
   data() {
     return {
-      key: "{{key}}",
+      key: "0be9f7ea34a151b04c340e2114da5c26",
       weatherData: {},
       city: "Cotonou",
       error: {},
@@ -106,7 +106,7 @@ export default {
   },
   created() {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=Cotonou&appid={{key}}&units=metric&lang=fr"
+      "https://api.openweathermap.org/data/2.5/weather?q=Cotonou&appid=0be9f7ea34a151b04c340e2114da5c26&units=metric&lang=fr"
     )
       .then((res) => res.json())
       .then((data) => (this.weatherData = data))
