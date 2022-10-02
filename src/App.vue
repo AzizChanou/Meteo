@@ -10,7 +10,7 @@
         </button>
       </div>
       <div
-        class="w-full flex flex-row justify-between shadow-inner shadow-black overflow-x-scroll space-x-4 md:space-x-0">
+        class="w-full flex flex-row justify-between overflow-x-scroll space-x-4 md:space-x-0">
         <div class="bg-secondary p-3 font-bold rounded flex flex-col items-center">
           <span class="uppercase text-xl">Vent</span>
           <div class="text-xl lg:text-3xl my-6">
