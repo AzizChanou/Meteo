@@ -65,7 +65,7 @@
         </div>
         <div class="flex flex-col h-4/6 justify-center items-center">
           <img :src="
-            'http://openweathermap.org/img/wn/' +
+            'https://openweathermap.org/img/wn/' +
             weatherData.weather[0].icon +
             '@4x.png'
           " class="animate-pulse" alt="" />
